@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HIH-PL-uploader</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1a1a; --muted:#5a5a5a;
+    --line:#e3e3e3; --accent:#6b46c1; --card:#fafafa;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141416; --fg:#e8e8ea; --muted:#9a9aa0;
+           --line:#2a2a2e; --accent:#a78bfa; --card:#1c1c20; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:64px 24px 96px}
+  h1{font-size:1.9rem; margin:0 0 6px; letter-spacing:-.02em}
+  .sub{color:var(--muted); margin:0 0 40px; font-size:.95rem}
+  h2{font-size:1.15rem; margin:40px 0 12px; letter-spacing:-.01em}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:10px; padding:20px 22px; margin:24px 0;
+  }
+  .card p:last-child{margin-bottom:0}
+  code{
+    background:var(--card); border:1px solid var(--line);
+    padding:1px 6px; border-radius:4px; font-size:.88em;
+  }
+  footer{
+    margin-top:56px; padding-top:24px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:.88rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>HIH-PL-uploader</h1>
+  <p class="sub">HIH'S PLAYLIST 유튜브 채널의 쇼츠 업로드 자동화 도구</p>
+
+  <h2>무엇을 하는 도구인가</h2>
+  <p>
+    HIH-PL-uploader는 <strong>HIH'S PLAYLIST</strong> 유튜브 음악 채널을 운영하기 위해
+    만든 개인용 스크립트입니다. 채널 소유자가 자신의 컴퓨터에서 직접 실행합니다.
+  </p>
+  <p>
+    이미 발매한 곡의 앞 60초와 미리 준비해 둔 이미지를 합쳐 세로형 쇼츠 영상을 만들고,
+    <strong>채널 소유자 본인의 유튜브 채널에</strong> 비공개 상태로 예약 업로드합니다.
+  </p>
+
+  <div class="card">
+    <p><strong>이용 대상은 채널 소유자 한 사람뿐입니다.</strong></p>
+    <p>
+      다른 사용자를 위한 서비스가 아니며, 회원가입·로그인 기능이 없고,
+      제3자에게 배포하거나 제공하지 않습니다.
+    </p>
+  </div>
+
+  <h2>사용하는 Google API</h2>
+  <ul>
+    <li><strong>YouTube Data API v3</strong> — 영상 업로드 (<code>youtube.upload</code> 범위)</li>
+  </ul>
+  <p>
+    업로드 외의 어떤 기능도 사용하지 않습니다. 시청 기록, 구독 정보, 댓글, 분석 데이터에
+    접근하지 않습니다.
+  </p>
+
+  <h2>개인정보 처리</h2>
+  <p>
+    이 도구는 채널 소유자 본인의 계정 정보 외에 어떤 개인정보도 수집하지 않습니다.
+    자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 참고하세요.
+  </p>
+
+  <h2>채널</h2>
+  <p>
+    HIH'S PLAYLIST는 AI로 제작한 다크 R&amp;B 콘셉트 앨범을 발매하는 유튜브 음악 채널입니다.
+    은발과 오드아이를 가진 타락천사를 중심으로 한 세계관을 이어갑니다.
+  </p>
+
+  <footer>
+    문의 · <a href="mailto:hihan2079@gmail.com">hihan2079@gmail.com</a><br>
+    <a href="privacy.html">개인정보처리방침</a>
+  </footer>
+
+</div>
+</body>
+</html>
